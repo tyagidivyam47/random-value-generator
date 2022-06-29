@@ -84,7 +84,7 @@ function App() {
   };
 
   return (
-    <div className="text-center ">
+    <div className="text-center">
       {err && (
         <h1 className="text-xl font-sans text-red-600">
           Please set proper Query Parameter value as max and min
@@ -94,20 +94,41 @@ function App() {
         <div className=" space-y-4">
           <div className="h-32 w-[55rem] bg-slate-300 mt-20 m-auto rounded-md">
             <div className="grid grid-cols-7 text-7xl font-extrabold">
-              <div className="border-r h-32 text-center text-red-600  pt-6">{num[0]}</div>
-              <div className="border-x h-32 text-center text-red-600 pt-6">{num[1]}</div>
-              <div className="border-x h-32 text-center text-red-600 pt-6">{num[2]}</div>
-              <div className="border-x h-32 text-center text-red-600 pt-6">{num[3]}</div>
-              <div className="border-x h-32 text-center text-red-600 pt-6">{num[4]}</div>
-              <div className="border-x h-32 text-center text-red-600 pt-6">{num[5]}</div>
-              <div className="border-l h-32 text-center text-red-600 pt-6">{num[6]}</div>
+              <div className="border-r h-32 text-center text-red-600  pt-6">
+                {num[0]}
+              </div>
+              <div className="border-x h-32 text-center text-red-600 pt-6">
+                {num[1]}
+              </div>
+              <div className="border-x h-32 text-center text-red-600 pt-6">
+                {num[2]}
+              </div>
+              <div className="border-x h-32 text-center text-red-600 pt-6">
+                {num[3]}
+              </div>
+              <div className="border-x h-32 text-center text-red-600 pt-6">
+                {num[4]}
+              </div>
+              <div className="border-x h-32 text-center text-red-600 pt-6">
+                {num[5]}
+              </div>
+              <div className="border-l h-32 text-center text-red-600 pt-6">
+                {num[6]}
+              </div>
             </div>
           </div>
-          <button onClick={onSpinClick} className="py-2 px-4 bg-slate-500 transition-all hover:bg-red-600 rounded-md">
+          <button
+            onClick={onSpinClick}
+            className="p-4 bg-slate-500 transition-all hover:bg-red-600 rounded-full"
+          >
             Spin
           </button>
         </div>
       )}
+
+      {/* <div>
+        <img src={Img} alt="casino" />
+      </div> */}
 
       {/* <button onClick={onClear} className="p-2 bg-slate-500 rounded-md">
         Spin
